@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorSkyBlue</item>
+        <item name="colorPrimaryDark">@color/colorSkyBlue</item>
+        <item name="colorAccent">@color/colorSkyBlue</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

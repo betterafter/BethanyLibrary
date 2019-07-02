@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSkyBlue"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="347dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="326dp"
+        android:background="@null"
+        android:enabled="false"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="찾기 버튼을 눌러 목록을 가져오세요"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="345dp"
+        android:layout_height="198dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginBottom="533dp"
+        android:background="@drawable/shape" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="437dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape" />
+
+    <Button
+        android:id="@+id/find_book_list"
+        android:layout_width="61dp"
+        android:layout_height="37dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button"
+        android:onClick="FindClick"
+        android:text="찾기"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <ListView
+        android:id="@+id/lib_list"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="horizontal|vertical"
+        tools:layout_editor_absoluteY="339dp" />
+
+    <include android:id="@+id/toolbar" layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="343dp"
+        android:layout_height="181dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp"
+        android:text="1. csv파일은 엑셀 -> 다른 이름으로 저장 -> UTF-8(.csv) 확장자로 변경 후 저장으로 생성합니다.\n\n2. 파일의 목록은 [책이름 - 책번호 - 책위치 - 날짜 - 비고]의 형식이 아니면 열리지 않습니다."
+        android:textStyle="bold" />
+
+</RelativeLayout>
